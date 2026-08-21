@@ -19,7 +19,7 @@ from dynamo_utils import (
     create_tenant, create_user, get_user_by_email,
     create_invite, get_invite, mark_invite_accepted,
 )
-
+// these are the headers cors
 CORS_HEADERS = {
     "Content-Type": "application/json",
     "Access-Control-Allow-Origin": "*",
