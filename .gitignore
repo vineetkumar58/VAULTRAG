@@ -1,0 +1,24 @@
+# Terraform
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.*
+terraform/.terraform.lock.hcl
+terraform/terraform.tfvars
+build/
+
+# Python
+__pycache__/
+*.pyc
+lambdas/*/boto3*
+lambdas/*/botocore*
+lambdas/shared/*.dist-info/
+lambdas/shared/bin/
+# NOTE: don't blanket-ignore all installed packages here in a real repo -
+# typically you'd install deps at build time (CI) rather than commit them,
+# or use a requirements-based Lambda layer build step. Adjust as needed.
+
+# Env
+.env
+
+# OS
+.DS_Store
